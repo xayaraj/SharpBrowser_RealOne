@@ -32,10 +32,12 @@
     <EmbeddedResource Include="Resources\sharpbrowser.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="CefSharp.Common" Version="134.3.60" />
-    <PackageReference Include="CefSharp.Common.NETCore" Version="134.3.60" />
-    <PackageReference Include="CefSharp.WinForms.NETCore" Version="134.3.60" />
-    <PackageReference Include="chromiumembeddedframework.runtime.win-x64" Version="134.3.6" />
+    <!-- Pin CefSharp/CEF to matching latest versions to avoid package downgrade errors -->
+    <PackageReference Include="CefSharp.Common" Version="143.0.90" />
+    <PackageReference Include="CefSharp.Common.NETCore" Version="143.0.90" />
+    <PackageReference Include="CefSharp.WinForms.NETCore" Version="143.0.90" />
+    <PackageReference Include="chromiumembeddedframework.runtime.win-x64" Version="143.0.9" />
+    <PackageReference Include="chromiumembeddedframework.runtime.win-x86" Version="143.0.9" />
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
